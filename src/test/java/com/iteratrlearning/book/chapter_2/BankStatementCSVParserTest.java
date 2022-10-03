@@ -8,7 +8,6 @@ import java.time.Month;
 import org.junit.Assert;
 import main.java.com.iteratrlearning.book.chapter_2.BankStatementCSVParser;
 import main.java.com.iteratrlearning.book.chapter_2.BankTransaction;
-import main.java.com.iteratrlearning.book.chapter_2.BankTransactionParser;
 
 public class BankStatementCSVParserTest {
 
@@ -16,7 +15,7 @@ public class BankStatementCSVParserTest {
 
     @Test
     public void shouldParseOneCorrectLine() throws Exception { 
-        final String line = "30-01-2017,-5,Tesco";
+        final String line = "30-01-2017,-50,Tesco";
 
         final BankTransaction result = bankStatementCSVParser.parseFrom(line);
     
