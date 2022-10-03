@@ -3,6 +3,10 @@ package main.java.com.iteratrlearning.book.chapter_2;
 import java.time.LocalDate;
 import java.util.Objects;
 
+/*
+ * Класс созданый по SRP, где создаеются и обрабатываются спарсенный файлы 
+ */
+
 public class BankTransaction {
     private final LocalDate date;
     private final double amount;

@@ -7,6 +7,14 @@ import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/*
+ * Написанный анализатор банковских операций на основе метода - Принцип единственной отвественности(SRP)
+ * 
+ * Обычно SRP - применяется для классов и методов. Он связан одной конкретной конецепцией, категорией или 
+ * каким-то определенным поведением. 
+ */
+
 public class BankStatementAnalyzerSRP {
     private static final String RESOURCES = "src/main/resources/";
 
@@ -20,7 +28,7 @@ public class BankStatementAnalyzerSRP {
         final Path path = Paths.get(RESOURCES + fileName);
         final List<String> lines = Files.readAllLines(path);
 
-        final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFromCSV(lines);
+        final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
 
 
         System.out.println("The total for all transactions is " + calculateTotalAmount(bankTransactions));

@@ -5,6 +5,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+
+/* 
+ * Первая версия анализатора банковских операций 
+ */
 public class BankTransactionAnalyzerSimple {
 
     private static final String RESOURCES = "src/main/resources/";
